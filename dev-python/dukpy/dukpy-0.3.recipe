@@ -39,7 +39,7 @@ BUILD_REQUIRES="$BUILD_REQUIRES
 	setuptools_$pythonPackage"
 BUILD_PREREQUIRES="$BUILD_PREREQUIRES
 	cmd:python$pythonVersion"
-	cmd:gcc
+
 done
 
 PROVIDES_python36="$PROVIDES_python36
