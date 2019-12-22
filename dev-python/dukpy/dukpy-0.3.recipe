@@ -13,6 +13,8 @@ ARCHITECTURES="!x86_gcc2 x86_64"
 PROVIDES="
 	$portName = $portVersion
 	"
+BUILD_PREREQUIRES="
+	cmd:gcc	"
 REQUIRES="
 	haiku
 	"
