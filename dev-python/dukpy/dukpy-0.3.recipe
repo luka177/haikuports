@@ -15,7 +15,7 @@ PROVIDES="
 REQUIRES="
 	haiku
 	"
-	
+
 BUILD_REQUIRES="
 	haiku_devel
 	"
