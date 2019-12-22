@@ -19,7 +19,6 @@ REQUIRES="
 
 BUILD_REQUIRES="
 	haiku_devel
-	cmd:gcc
 	"
 
 PYTHON_PACKAGES=(python36 python3)
@@ -38,6 +37,7 @@ BUILD_REQUIRES="$BUILD_REQUIRES
 	setuptools_$pythonPackage"
 BUILD_PREREQUIRES="$BUILD_PREREQUIRES
 	cmd:python$pythonVersion"
+	cmd:gcc
 done
 
 PROVIDES_python36="$PROVIDES_python36
