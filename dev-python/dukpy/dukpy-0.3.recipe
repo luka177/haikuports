@@ -1,5 +1,5 @@
 SUMMARY="JavaScript in Python"
-DESCRIPTION="dukpy is a JavaScript runtime environment for Python (tested with python 2.7 and >= 3.4) using the duktape embeddable JavaScript engine. With dukpy, you can run JavaScript in Python."
+DESCRIPTION="dukpy is a JavaScript runtime environment for Python."
 HOMEPAGE="https://github.com/kovidgoyal/dukpyt"
 COPYRIGHT="Duktape authors"
 LICENSE="MIT"
@@ -24,7 +24,7 @@ BUILD_REQUIRES="
 BUILD_PREREQUIRES="$BUILD_PREREQUIRES
 	cmd:gcc
 	"
-	
+
 PYTHON_PACKAGES=(python36 python3)
 PYTHON_VERSIONS=( 3.6 3.7)
 for i in "${!PYTHON_PACKAGES[@]}"; do
