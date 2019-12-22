@@ -13,8 +13,7 @@ ARCHITECTURES="!x86_gcc2 x86_64"
 PROVIDES="
 	$portName = $portVersion
 	"
-BUILD_PREREQUIRES="$BUILD_PREREQUIRES
-	cmd:gcc"
+
 REQUIRES="
 	haiku
 	"
@@ -22,7 +21,8 @@ REQUIRES="
 BUILD_REQUIRES="
 	haiku_devel
 	"
-
+BUILD_PREREQUIRES="$BUILD_PREREQUIRES
+	cmd:gcc"
 PYTHON_PACKAGES=(python36 python3)
 PYTHON_VERSIONS=( 3.6 3.7)
 for i in "${!PYTHON_PACKAGES[@]}"; do
