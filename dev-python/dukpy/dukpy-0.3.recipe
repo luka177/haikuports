@@ -22,7 +22,7 @@ BUILD_REQUIRES="
 	gcc
 	"
 
-PYTHON_PACKAGES=(python36 python37)
+PYTHON_PACKAGES=(python36 python3)
 PYTHON_VERSIONS=( 3.6 3.7)
 for i in "${!PYTHON_PACKAGES[@]}"; do
 pythonPackage=${PYTHON_PACKAGES[i]}
@@ -41,10 +41,10 @@ BUILD_PREREQUIRES="$BUILD_PREREQUIRES
 done
 
 PROVIDES_python36="$PROVIDES_python36
-	cmd:html2text3.6
+	cmd:dukpy
 	"
 PROVIDES_python3="$PROVIDES_python3
-	cmd:html2text3.7
+	cmd:dukpy
 	"
 
 INSTALL()
@@ -61,9 +61,7 @@ INSTALL()
 		$python setup.py build install \
 			--root=/ --prefix=$prefix
 
-		mv $binDir/html2text $binDir/html2text$pythonVersion
 		packageEntries  $pythonPackage \
-			$prefix/lib/python* \
-			$binDir
+			$prefix/lib/python*
 	done
 }
