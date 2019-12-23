@@ -5,8 +5,8 @@ COPYRIGHT="Duktape authors"
 LICENSE="MIT"
 REVISION="1"
 SOURCE_URI="https://github.com/kovidgoyal/dukpy/archive/v$portVersion.tar.gz"
-SOURCE_FILENAME="dukpy-v$portVersion.tar.gz"
 CHECKSUM_SHA256="cc78c39ebba51f381c623b164cfb7dcf3caddf515fe7094bc53b7eca5d4e435e"
+SOURCE_FILENAME="dukpy-v$portVersion.tar.gz"
 
 ARCHITECTURES="!x86_gcc2 x86_64"
 
