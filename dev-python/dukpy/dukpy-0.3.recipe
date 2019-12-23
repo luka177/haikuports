@@ -22,8 +22,7 @@ BUILD_REQUIRES="
 	"
 BUILD_PREREQUIRES="$BUILD_PREREQUIRES
 	cmd:gcc
-	"+SOURCE_URI="https://github.com/kovidgoyal/dukpy/archive/v$portVersion.tar.gz
-+SOURCE_FILENAME="dukpy-v$portVersion.tar.gz"
+	"
 PYTHON_PACKAGES=(python36 python3)
 PYTHON_VERSIONS=(3.6 3.7)
 for i in "${!PYTHON_PACKAGES[@]}"; do
